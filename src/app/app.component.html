@@ -1,0 +1,35 @@
+<mat-drawer-container class="example-container" autosize>
+
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <div style="width:450px">
+       
+    </div>
+  </mat-drawer>
+
+  <mat-toolbar style="background: darkblue; color:white; width: 100%">
+      <mat-toolbar-row>
+          <span>Custom Toolbar</span>
+          <span class="example-spacer"></span>
+ 
+          <button style="background: transparent; "><i class="material-icons" style="color: white;font-size: 50px" (click)="drawer.toggle()">
+              menu
+              </i></button>
+        </mat-toolbar-row>
+    </mat-toolbar>
+  
+
+  <div class="example-sidenav-content">
+      <div style="width: 1850px;">
+          <router-outlet></router-outlet>
+      </div>
+      
+     
+  </div>
+
+</mat-drawer-container> 
+
+
+
+
+
+
